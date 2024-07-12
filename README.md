@@ -32,6 +32,10 @@ Tutoriel de Django
 
 `python manage.py shell`
 
+### Créer un superuser
+
+`python manage.py createsuperuser`
+
 ## Principales fonctions
 
 ### include()
@@ -133,7 +137,3 @@ Compte le nombre d'entrés :
 
 Effacter une entrée (variable) :
 `c.delete()`
-
-
-###Créer un super utilisateur :
-``
