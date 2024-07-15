@@ -42,3 +42,4 @@ def index(request):
     return render(request, "polls/index.html", context)
 
 ##############################  Utilisation du système de gabarits
+
