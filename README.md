@@ -137,3 +137,23 @@ Compte le nombre d'entrés :
 
 Effacter une entrée (variable) :
 `c.delete()`
+
+## Ajout d'entrée dans l'interface admin
+
+Afin d'ajouter une entrée dans l'interface admin, il faut l'intégrer dans le code :
+
+> Sur 'models.py'
+
+```
+class Question(models.Model):
+    question_text = models.CharField(max_length=200)
+    pub_date = models.DateTimeField("date published")
+    place_holder_3 = models.CharField(max_length=200, null=True, blank=True)
+```
+
+> Sur 'admin.py'
+
+```
+class QuestionAdmin(admin.ModelAdmin):
+    fields = ["pub_date", "question_text", "place_holder_3"]
+```
